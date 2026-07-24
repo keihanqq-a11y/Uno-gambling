@@ -14,7 +14,7 @@ interface UserState {
   user: UserProfile;
   transactions: Transaction[];
   isAuthenticated: boolean;
-  soundIn: (username?: string) => void;
+  signIn: (username?: string) => void;
   signOut: () => void;
   deposit: (amountUsd: number, asset: CryptoAssetId) => Transaction;
   withdraw: (amountUsd: number, asset: CryptoAssetId) => Transaction | null;

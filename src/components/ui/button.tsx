@@ -11,7 +11,7 @@ type Size = "sm" | "md" | "lg" | "icon";
 interface ButtonProps extends Omit<HTMLMotionProps<"button">, "children"> {
   variant?: Variant;
   size?: Size;
-  sound?: "click" | "success" | "deposit" | "withdraw" | "coin" | "none";
+  sound?: "click" | "success" | "deposit" | "withdraw" | "coin" | "uno" | "none";
   glow?: boolean;
   children: React.ReactNode;
 }

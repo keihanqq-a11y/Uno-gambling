@@ -7,12 +7,21 @@ export function Badge({
 }: {
   children: React.ReactNode;
   className?: string;
-  tone?: "purple" | "cyan" | "blue" | "success" | "warning" | "danger" | "muted";
+  tone?:
+    | "purple"
+    | "cyan"
+    | "blue"
+    | "pink"
+    | "success"
+    | "warning"
+    | "danger"
+    | "muted";
 }) {
   const tones = {
     purple: "bg-purple/15 text-purple-bright border-purple/30",
     cyan: "bg-cyan/15 text-cyan border-cyan/30",
     blue: "bg-blue/15 text-blue-300 border-blue/30",
+    pink: "bg-pink/15 text-pink border-pink/30",
     success: "bg-success/15 text-success border-success/30",
     warning: "bg-warning/15 text-warning border-warning/30",
     danger: "bg-danger/15 text-danger border-danger/30",
